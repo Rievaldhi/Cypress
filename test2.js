@@ -5,7 +5,7 @@ describe('Test ke - 2', function () {
         cy.get('#et_pb_contact_email_0').type('rievaldhi@gmail.com')
         cy.get('.et_pb_contact_submit').click()
         cy.get('#simpleElementsLink').click()
-        cy.get('.entry-title').contains('Link success')
+        cy.get('.entry-title').should('have.text' , 'Link success')
     }) ,
     it(' tc-2 ' , function () {
 
@@ -30,7 +30,7 @@ describe('Test ke - 2', function () {
 
         cy.visit('https://ultimateqa.com/simple-html-elements-for-automation/')
         cy.get('.et_pb_cta_0 > .et_pb_button_wrapper > .et_pb_button').click()
-        cy.get('.entry-title').contains('Button success')
+        cy.get('.entry-title').should('have.text' , 'Button success')
                 
     })
 
