@@ -3,6 +3,10 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
+cypress/screenshots
+cypress/videos
+
+
 
 # Other files and folders
 .settings/
