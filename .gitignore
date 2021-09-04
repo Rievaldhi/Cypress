@@ -5,11 +5,15 @@ bin-release/
 [Bb]in/
 cypress/screenshots
 cypress/videos
+node_modules/
 
 
 
 # Other files and folders
 .settings/
+package-lock.json
+package.json
+
 
 # Executables
 *.swf

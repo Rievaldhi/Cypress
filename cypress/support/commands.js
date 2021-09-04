@@ -23,3 +23,21 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+//add commands for visit web
+Cypress.Commands.add('openUrl' , () => {
+
+    cy.visit('https://admin.pkh.dojobox.id/')
+
+}); 
+
+Cypress.Commands.add('login' , () => {
+
+    cy.get('#input-email').type('e@dojobox.id')
+    cy.get('#input-password').type('admin')
+    cy.get('#btn-login').click()
+    cy.get('.mr-2 > b').should('have.text' , 'Super Admin')
+}); 
+
+//add library for upload file with cypress
+import "cypress-file-upload";
