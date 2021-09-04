@@ -41,3 +41,4 @@ Cypress.Commands.add('login' , () => {
 
 //add library for upload file with cypress
 import "cypress-file-upload";
+
